@@ -20,7 +20,6 @@
             <version>3.9</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
@@ -42,7 +41,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.5</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -54,26 +53,6 @@
               <configuration>
                   <source>1.6</source>
                   <target>1.6</target>
-              </configuration>
-          </plugin>
-          <plugin>
-              <artifactId>maven-surefire-plugin</artifactId>
-              <configuration>
-                  <skip>true</skip>   
-              </configuration>
-          </plugin>
-
-          <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-eclipse-plugin</artifactId>
-              <version>2.6</version>
-              <configuration>
-                  <downloadSources>false</downloadSources>
-                  <downloadJavadocs>false</downloadJavadocs>
-                  <wtpversion>2.0</wtpversion>
-                  <sourceExcludes>
-                      <sourceExclude>**/.svn/**</sourceExclude>
-                  </sourceExcludes>
               </configuration>
           </plugin>
         </plugins>
