@@ -24,6 +24,11 @@ step1.1
 mvn test
 ok
 
+step1.2
+mvn test
+breakpoint caught
+
+
 
 
 
