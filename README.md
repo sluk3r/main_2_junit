@@ -14,7 +14,15 @@ step0.2
 int test_lines = 200 * w_unit;
 demo: after several comment out, we got the breakout
 
+============================
+step1
 
+mvn test
+but failed
+
+step1.1
+mvn test
+ok
 
 
 
