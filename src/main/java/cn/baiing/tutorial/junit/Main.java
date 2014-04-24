@@ -21,7 +21,10 @@ public class Main {
         Sheet sheet = workbook.createSheet("Sample sheet");
 
 //        int test_lines = 10 * w_unit;
-        int test_lines = 20 * w_unit;
+//        int test_lines = 20 * w_unit;
+//        int test_lines = 50 * w_unit;
+//        int test_lines = 100 * w_unit;
+        int test_lines = 200 * w_unit;
 
         for (int i=0;i< test_lines; i++ ) {
             Row testRow = sheet.createRow(sheet.getLastRowNum() + 1);
