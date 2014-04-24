@@ -20,7 +20,9 @@ public class Main {
         SXSSFWorkbook workbook = workbook = new SXSSFWorkbook();
         Sheet sheet = workbook.createSheet("Sample sheet");
 
-        int test_lines = 10 * w_unit;
+//        int test_lines = 10 * w_unit;
+        int test_lines = 20 * w_unit;
+
         for (int i=0;i< test_lines; i++ ) {
             Row testRow = sheet.createRow(sheet.getLastRowNum() + 1);
 
