@@ -16,6 +16,7 @@ public class JunitVersionTest {
     SXSSFWorkbook workbook;
     Sheet sheet;
 
+    int breakOutPoint = 0;
 
     @Before
     public void setUp() {
@@ -55,18 +56,23 @@ public class JunitVersionTest {
             doInsertData(maxValue, data);
         } catch (Exception e) {
 //            System.out.println("maxLine: " + maxValue);
-            Assert.fail("maxValue: " + maxValue + ", and exception msg: " + e.getMessage());
+            Assert.fail("breakOutPoint: " + breakOutPoint + ", and exception msg: " + e.getMessage());
         }
     }
 
     private void doInsertData(int maxLines, String[] data) {
-        for (int i = 0; i < maxLines; i++) {
-            Row testRow = sheet.createRow(sheet.getLastRowNum() + 1);
+        for (int i =0; i < maxLines; i++) {
+            try {
+                Row testRow = sheet.createRow(sheet.getLastRowNum() + 1);
 
-            for (int j = 0; j < data.length; j++) {
-                Cell testCell = testRow.createCell(j);
-                testCell.setCellValue(data[j]);
+                for (int j = 0; j < data.length; j++) {
+                    Cell testCell = testRow.createCell(j);
+                    testCell.setCellValue(data[j]);
+                }
+            } finally {
+                breakOutPoint = i;
             }
+
         }
     }
 
