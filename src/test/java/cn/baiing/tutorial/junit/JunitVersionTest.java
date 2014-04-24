@@ -8,7 +8,7 @@ import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.junit.Before;
 import org.junit.Test;
 
-public class JunitVersion {
+public class JunitVersionTest {
     final static int w_unit = 10000;
     final static String cellValue = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
     final static String[] data = new String[]{cellValue, cellValue};
