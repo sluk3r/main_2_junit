@@ -30,6 +30,8 @@ public class Main {
             }
         }
 
+        System.out.println("\n\n\n++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("max line test ok, and number is: " + test_lines );
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++\n\n\n");
     }
 }
